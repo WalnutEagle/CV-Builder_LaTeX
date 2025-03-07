@@ -11,10 +11,9 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Set up LaTeX environment
-      uses: dante-ev/latex-action@v2
-
-    - name: Compile LaTeX document
-      run: latexmk -pdf -interaction=nonstopmode -file-line-error main.tex
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: main.tex
 
     - name: Commit and push generated PDF
       run: |
