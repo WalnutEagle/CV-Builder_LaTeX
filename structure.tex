@@ -1,0 +1,54 @@
+% Structure file with custom commands and formatting
+
+% Configure page
+\pagestyle{fancy}
+\fancyhf{} % Clear header and footer
+\renewcommand{\headrulewidth}{0pt} % Remove header rule
+\renewcommand{\footrulewidth}{0pt} % Remove footer rule
+
+% Section formatting - font size 13pt
+\titleformat{\section}{
+  \scshape\raggedright\Large\fontsize{13}{13}\selectfont
+}{}{0em}{}[\color{black}\titlerule]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item #1
+}
+
+% Education entries with proper formatting
+\newcommand{\resumeEducationEntry}[4]{
+  \item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}
+}
+
+% Experience entries with proper formatting
+\newcommand{\resumeExperienceEntry}[4]{
+  \item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} \underline{#2} - #3 & #4 \\
+    \end{tabular*}
+}
+
+% Project entries with bold title
+\newcommand{\resumeProjectEntry}[2]{
+  \item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}, itemsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=0pt, topsep=0pt, label=\textbullet]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+% Adjust spacing
+\setlength{\tabcolsep}{0pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
