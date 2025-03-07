@@ -1,11 +1,16 @@
+\documentclass{article}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot[C]{Page \thepage\ of \pageref{LastPage}}
+
+\begin{document}
 % Coursework section
 \vspace{-0.65cm}
 \section{Coursework}
-\resumeSubHeadingListStart
-    \vspace{-0.25cm}
-    \resumeItemListStart
-        \item {Coursework 1}
-        \item {Coursework 2}
-        \item {Coursework 3}
-    \resumeItemListEnd
-\resumeSubHeadingListEnd
+\begin{itemize}
+    \item Course 1
+    \item Course 2
+    \item Course 3
+\end{itemize}
+\end{document}
