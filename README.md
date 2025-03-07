@@ -39,3 +39,25 @@ This repository contains a professional resume template built using LaTeX. The t
 ## Requirements
 - LaTeX distribution (e.g., TeX Live, MiKTeX)
 - PDF viewer
+
+## GitHub Actions Workflow
+
+This repository uses a GitHub Actions workflow to automatically generate a PDF from the LaTeX source files and push the generated PDF to the repository.
+
+### Setting Up the Workflow
+
+To set up the workflow, follow these steps:
+
+1. Create a Personal Access Token (PAT) on GitHub with the necessary permissions (Contents and Metadata).
+2. Store the PAT as a secret in your GitHub repository:
+   - Go to **Settings** > **Secrets** > **Actions**.
+   - Click on **New repository secret**.
+   - Name the secret `ACTIONS_PATH` and paste the PAT you copied earlier.
+
+### Note
+
+The GitHub Actions workflow file is configured to use the `ACTIONS_PATH` secret for authentication. Make sure to update the secret if you regenerate the PAT.
+
+### Privacy of Actions
+
+Please note that the actions taken in this repository are public and can be viewed by anyone with access to the repository. GitHub Actions logs and workflow runs are not private for public repositories.
