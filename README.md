@@ -57,7 +57,3 @@ To set up the workflow, follow these steps:
 ### Note
 
 The GitHub Actions workflow file is configured to use the `ACTIONS_PATH` secret for authentication. Make sure to update the secret if you regenerate the PAT.
-
-### Privacy of Actions
-
-Please note that the actions taken in this repository are public and can be viewed by anyone with access to the repository. GitHub Actions logs and workflow runs are not private for public repositories.
